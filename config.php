@@ -1,4 +1,3 @@
 <?php
 $host = "";
-$port = "";
-$ssl = false;
+$port = 3000;
