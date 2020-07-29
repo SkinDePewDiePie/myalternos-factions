@@ -1,7 +1,7 @@
 <?php
 require(dirname(__FILE__)."/config.inc.php");
 $curl = extension_loaded("curl") ? curl_init() : false;
-$protocol = $ssl ? "https://" : "http://";
+$protocol = "http://";
 $url = "$protocol$url:$port";
 
 if(!$curl){
@@ -17,7 +17,7 @@ function getFactionInfos($id){
   }
  
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($curl, CURLOPT_URL, "$url/getAllFactionInfos?id=$id");
+  curl_setopt($curl, CURLOPT_URL, "$url/getFactionInfos?id=$id");
 
   $result = curl_exec($ch);
   curl_close($ch);
