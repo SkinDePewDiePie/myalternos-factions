@@ -32,6 +32,5 @@
                 <div class="clear"></div>
                 <hr>
             </div>
-        </div>
     </div>
 </div>
